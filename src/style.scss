@@ -1,0 +1,34 @@
+@import "./scss/fonts";
+@import "./scss/colors";
+@import "./components/header/header";
+@import "./components/header/darkModeButton";
+@import "./components/categories/displayData";
+@import "./components/product/product";
+@import "./components/button/button";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $text;
+  color: $darkBlue;
+  background-color: $whiteBlue;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $titles;
+}
+
+#root {
+  margin: 0 auto;
+  width: 90%;
+}

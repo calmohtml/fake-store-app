@@ -1,0 +1,16 @@
+@import "../../scss/fonts";
+@import "../../scss/colors";
+
+.button {
+  background: inherit;
+  color: inherit;
+  font-family: $titles;
+  border: 0.4rem solid $pastelYellow;
+  padding: 0.8rem;
+  border-radius: 1.2rem;
+  outline: none;
+
+  &:hover {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,33 @@
+.singleProduct__container {
+  .singleProduct__title {
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.singleProduct__info {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .singleProduct__img {
+    img {
+      width: 22.5rem;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  .singleProduct__description {
+    h2,
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .singleProduct__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

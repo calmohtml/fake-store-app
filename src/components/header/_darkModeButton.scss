@@ -1,0 +1,14 @@
+@import "../../scss/colors";
+
+.dark {
+  color: $whiteBlue;
+  background-color: $darkBlue;
+}
+
+.darkMode__button {
+  background: $pastelYellow;
+  color: $darkBlue;
+  border: 0.2rem solid $pastelYellow;
+  border-radius: 3rem;
+  padding: 0.5rem;
+}

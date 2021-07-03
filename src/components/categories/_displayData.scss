@@ -1,0 +1,62 @@
+@import "../../scss/colors";
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.product {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $pastelYellow;
+  margin: 1rem 1rem;
+  padding: 1rem;
+
+  &__title {
+    h2 {
+      font-size: 1.4rem;
+      margin: 1rem 0;
+    }
+  }
+
+  &__img {
+    display: flex;
+
+    img {
+      width: 10rem;
+      display: flex;
+      margin: 2rem auto;
+    }
+
+    details {
+      summary {
+        cursor: pointer;
+        outline: none;
+      }
+
+      figcaption {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

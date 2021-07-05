@@ -29,7 +29,6 @@
   position: fixed;
   width: 100%;
   z-index: 2;
-  color: $darkBlue;
   bottom: 0;
   border-bottom: none;
   display: flex;
@@ -44,6 +43,7 @@
 
     a {
       color: inherit;
+      text-decoration: none;
     }
 
     a:hover {

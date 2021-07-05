@@ -41,7 +41,7 @@ export const Product = () => {
             <div className="singleProduct__description">
               <h2>Description:</h2>
               <h3>{product.description}</h3>
-              <Button text="Click here" />
+              <Button text="Buy" />
             </div>
           </div>
         </section>

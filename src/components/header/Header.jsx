@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="header">
       <nav className="header__nav">
         <div className="header__title">
-          <NavLink to="/">
+          <NavLink to="https://calmohtml.github.io/fake-store-app">
             <h1>Store</h1>
           </NavLink>
         </div>

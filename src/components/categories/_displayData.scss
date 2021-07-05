@@ -47,15 +47,25 @@
   a {
     color: inherit;
   }
+
+  &:last-child {
+    margin-bottom: 7rem;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
-  .product__title {
-    h2 {
-      font-size: 1.1rem;
+  .product {
+    &__title {
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 1rem;
     }
   }
 }
@@ -64,10 +74,22 @@
   .products {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .product {
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 1920px) {
   .products {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product {
+    &:last-child {
+      margin-bottom: 1rem;
+    }
   }
 }

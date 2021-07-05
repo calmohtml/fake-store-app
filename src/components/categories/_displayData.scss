@@ -47,6 +47,11 @@
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
+  .product__title {
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {

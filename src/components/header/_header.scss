@@ -1,13 +1,60 @@
-.header {
-  &__nav {
-    display: flex;
-    padding: 1rem 0;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
+@import "../../scss/colors";
 
-    h1 {
+.header__nav {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+
+  .header__title {
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      h1 {
+        color: inherit;
+
+        &:hover {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}
+
+.nav__links {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  color: $darkBlue;
+  bottom: 0;
+  border-bottom: none;
+  display: flex;
+  background-color: $pastelYellow;
+
+  .nav__item {
+    margin: 1rem 0.9vw;
+    text-align: center;
+    padding: 1rem 0.8vw;
+    width: 25%;
+    list-style: none;
+
+    a {
       color: inherit;
     }
+
+    a:hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .nav__links {
+    position: relative;
+    background-color: inherit;
   }
 }

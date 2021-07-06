@@ -4,6 +4,7 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
+  margin: 1rem 0;
 
   .header__title {
     display: flex;
@@ -57,5 +58,6 @@
   .nav__links {
     position: relative;
     background-color: inherit;
+    color: inherit;
   }
 }

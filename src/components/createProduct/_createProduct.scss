@@ -1,0 +1,27 @@
+@import "../../scss/colors";
+
+.form__container {
+  display: grid;
+
+  #form {
+    justify-self: center;
+
+    .form__item {
+      margin: 1.5rem 0;
+
+      h2 {
+        margin: 1rem 0;
+      }
+
+      input,
+      select {
+        background: inherit;
+        color: inherit;
+        padding: 1rem;
+        border: 0.4rem solid $pastelYellow;
+        border-radius: 1.2rem;
+        outline: none;
+      }
+    }
+  }
+}
